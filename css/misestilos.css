@@ -1,0 +1,333 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+h1
+{
+	/* font: bold 20px verdana, sans-serif; */
+	color: white;
+	font-family: verdana, sans-serif;
+	text-align:  left;
+	text-shadow: 1px 1px 2px black;
+	text-shadow: 2px 2px 4px black, 1px 1px 2px white, 2px 2px 3px white;
+}
+
+h2
+{
+	font: bold 14px verdana, sans-serif;
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figcaption,
+hgroup
+{
+	display: block;
+}
+
+body
+{
+	text-align: center;
+}
+
+#agrupar
+{
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: left;
+	width: 100%;
+}
+
+#cabecera
+{
+	background-color: hsla( 205, 100%, 30%, .95 );
+	background-image: url( '../img/codes-client.png' ),
+		url( '../img/python.png' ),
+		url( '../img/dota.png' ),
+		url( '../img/react.png' ),
+		url( '../img/mongodb.png' ),
+		url( '../img/stylus.png' ),
+		url( '../img/nodejs.png' );
+	background-position:
+		100% 50px,
+		60% top,
+		0 center,
+		95% top,
+		50% 50px,
+		75% top,
+		20% 20px;
+	background-repeat: no-repeat;
+	background-size: 20%, 20%, 20%, 15%, 20%, 15%, 20%;
+	padding: 2em 0 0 2em;
+}
+
+#cabecera h2
+{
+	color: white;
+}
+
+
+#menu
+{
+	/*background: #ccc;
+	 padding: 5px 15px; */
+	
+	display: flex;
+	justify-content: flex-end;
+}
+
+#menu ul
+{
+	/*background: hsl( 340, 80%, 50% );*/
+	background: white;
+	padding: 1em;
+	border-radius: 5px 0 0 0;
+}
+
+#menu li
+{
+	/* background: #3c5bd0; */
+	background: red;
+	border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	font: bold 14px verdana, sans-serif;
+	list-style: none;
+	padding: 5px 10px;
+	transition: 1s all;
+
+}
+
+#menu li:hover
+{
+	background: #d84d66;
+	cursor: pointer;
+	transform: scale( 1.1 ) rotate( -15deg );
+	transition: 1s all;
+}
+
+/* articles ---------------------------------------- */
+.Article
+{
+	/*background: -webkit-linear-gradient( top, hsl( 120, 40%, 45% ), hsl( 90, 65%, 75% ) );
+	border: 1px solid blue;*/
+	box-sizing: border-box;
+	margin: 1em 0;
+	width: 50%;
+}
+
+/* seccion ----------------------------------------- */
+#seccion
+{
+	background: hsl( 0, 0%, 95% );
+	box-sizing: border-box;
+	float: left;
+	padding: 1em;
+	position: relative;
+	width: 70%;
+}
+
+#seccion .Article
+{
+	width: 100%;
+}
+
+#seccion .Article-header
+{
+	margin: 0 0 1em 0;
+}
+
+#seccion .Article-title
+{
+	border-bottom: 2px solid hsl( 0, 0%, 60% );
+}
+
+#seccion .Article-section
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#seccion .Figure
+{
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px 1px hsla( 100, 0%, 0%, .5 );
+	overflow: hidden;
+	position: relative;
+	height: 300px;
+	width: 49%;
+}
+
+#seccion .Figure-desc
+{
+	background: hsl( 215, 50%, 50% );
+	box-sizing: border-box;
+	color: hsl( 0, 0%, 100% );
+	left: 0;
+	padding: 1em;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+}
+
+
+#columna
+{
+	/*background: -webkit-radial-gradient( circle, red, yellow 70%, green 90% );
+	background: #aa0;*/
+	/*border-radius: 20px 0 40px 0;*/
+	/*box-shadow: -5px -5px 10px hsla( 5, 60%, 70%, .9 ),
+		5px 5px 10px hsl( 120, 100%, 25% ),
+		5px 5px 10px hsl( 210, 90%, 55% ) inset, -5px -5px 10px hsl( 210, 90%, 55% ) inset;*/
+	float: left;
+	/*margin: 20px 0;*/
+	padding: 10px;
+	width: 30%;
+	box-sizing: border-box;
+	height: 500px;
+}
+
+#columna .Article
+{
+	border-radius: 5px;
+	background: hsl( 0, 0%, 95% );
+	width: 100%;
+}
+
+#pie
+{
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid #999;
+}
+
+article
+{
+	/* background: #c5d1ff;
+	border: 1px solid #999;
+	margin-bottom: 15px;
+	padding: 20px;*/
+}
+
+article footer
+{
+	text-align: right;
+}
+
+time
+{
+	color: #999;
+}
+
+figure img
+{
+	width: 100%;
+	height: 100%;
+}
+
+figcaption
+{
+	font: italic 14px verdana, sans-serif;
+	padding: .5em;
+}
+
+div
+{
+	border: 1px solid #000;
+	margin: 20px;
+	/*padding: 10px;*/
+	width: 100px;
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* figure
+{
+	display: flex;
+	flex-wrap: nowrap;
+} */
+
+img
+{
+	margin: auto;
+}
+
+/* contactos */
+.twitter
+{
+	color: hsl( 203, 90%, 54% );
+}
+
+.facebook
+{
+	color: hsl( 221, 44%, 41% );
+}
+
+.gmail
+{
+	color: hsl( 6, 69%, 57% );
+}
+
+#yoo
+{
+	display: none;
+	border-radius: 100px;
+	border: 5px solid white;
+	height: 200px;
+	left: 320px;
+	overflow: hidden;
+	position: absolute;
+	top: 460px;
+	transition: all .5s;
+	width: 200px;
+}
+
+#yoo:hover
+{
+	transform: rotate( 180deg );
+}
+
+
+/* formularios ------------------------------ */
+form
+{
+	border: 1px solid black;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 .5em;
+	/*width: 100%;*/
+}
+
+form input
+{
+	border-radius: 5px;
+	/*box-sizing: border-box;*/
+	height: 2em;
+	margin: .5em auto;
+	outline: none;
+	padding: .2em .5em;
+	width: 100%;
+}
+
+button
+{
+	background: hsl( 210, 90%, 55% );
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	padding: .5em .6em;
+}
