@@ -165,7 +165,7 @@ body
 /* START "Home" styles --------------------------- */
 .Home
 {
-	/* height: calc( 100vh - 5em ); */
+	margin: 1rem 0 0 1rem;
 	padding-top: 6em;
 }
 .Home-figure
@@ -186,7 +186,11 @@ body
 	height: 10em;
 	width: 11em;
 }
-
+.Home-title {
+	margin: .5rem 0 .5rem 0;
+}
+/* START "Home" styles --------------------------- */
+/* 
 .Home-desc
 {
 	background: hsl( 0, 0%, 99% );
@@ -249,8 +253,8 @@ body
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-}
-.html,
+} */
+/* .html,
 .css,
 .react,
 .native,
@@ -297,9 +301,9 @@ body
 .mongo
 {
 	background-image: url( '../img/mongo.png' );
-}
+} */
 
-.Home-list
+/* .Home-list
 .Home-item
 {
 	align-items: flex-end;
@@ -343,21 +347,45 @@ body
 	position: absolute;
 	top: 50%;
 	left: -1.9em;
-}
+} */
 /* END "Home"--------------------------------------- */
+
+/* Start concepts ---------------------------------- */
+.Art-title {
+	margin: 0 0 1rem 0;
+}
+.Art-item {
+	border: 1px dashed black;
+	border-radius: 4px;
+	margin: 0 0 1rem 0;
+	padding: .5rem;
+}
+
+
+
+/* End concepts ------------------------------------ */
 
 /* START "Photo" ---------------------------------- */
 .Photo
 {
-	padding-top: 5em;
-	height: calc( 100vh - 5em );
+	/* padding-top: 5em; */
+	/* height: calc( 100vh - 5em ); */
+	margin: 0;
+	width: 100%;
+}
+
+.Photo-img {
+	width: 100%;
 }
 .Photo-title
 {
 	margin: .5em 0 .5em 4em;
 	height: 1em;
 }
-.Slider
+
+/* End Photo ----------------------------------------- */
+
+/*.Slider
 {
 	border: 4px solid hsl( 215, 50%, 50% );
 	border-radius: 5px;
@@ -382,7 +410,7 @@ body
 	position: absolute;
 	width: 100%;
 }
-/* END "Photo" ------------------------------------ */
+*/
 
 /* START "Aside"  ------------------------------- */
 .Aside
@@ -398,7 +426,7 @@ body
 .Aside-article
 {
 	width: 100%;
-	margin-bottom: 2em;
+	margin: 2rem 0 2rem 0;
 }
 .Aside-article-title
 {
@@ -464,7 +492,7 @@ body
 /* END "pie" --------------------------------------- */
 
 /* START "Clock" Extra styles--------------------------- */
-.Clock
+/* .Clock
 {
 	align-items: center;
 	border: 1px solid hsl( 210, 80%, 40% );
@@ -484,7 +512,7 @@ body
 	display: block;
 	padding: .25em 0;
 	width: 2em;
-}
+} */
 /* END "Clock" Extra styles----------------------------- */
 
 /* formularios ------------------------------ */
