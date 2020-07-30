@@ -62,7 +62,7 @@ body
 {
 	align-items: center;
 	background-color: hsl( 230, 50%, 50% );
-	background-image:  url( '../img/stars.png' );
+	/* background-image:  url( '../img/stars.png' ); */
 	display: flex;
 	justify-content: space-around;
 	padding: 0 1em;
@@ -79,37 +79,42 @@ body
 	margin: 0;
 	color: hsl( 360, 100%, 100% );
 }
+.Header-subtitle
+{
+	margin: 0;
+	color: hsl( 360, 100%, 100% );
+}
 
 /* START "Navidad" ............................ */
-.Navidad-left,
-.Navidad-middle,
-.Navidad-right
+.Patria-left,
+.Patria-middle,
+.Patria-right
 {
 	position: absolute;
 	z-index: 10;
 }
-.Navidad-middle
+.Patria-middle
 {
 	left: 31%;
 	top: -1em;
 	width: 370px;
 }
-.Navidad-left
+.Patria-left
 {
-	top: -1em;
+	top: -18px;
 	left: -1em;
-	width: 100px;
+	width: 200px;
 }
-.Navidad-right
+.Patria-right
 {
 	top: 0;
 	right: 1em;
 	width: 120px;
 }
 
-.Navidad-left img,
-.Navidad-middle img,
-.Navidad-right img
+.Patria-left img,
+.Patria-middle img,
+.Patria-right img
 {
 	width: 100%
 }
@@ -160,15 +165,16 @@ body
 /* START "Home" styles --------------------------- */
 .Home
 {
-	height: calc( 100vh - 5em );
+	/* height: calc( 100vh - 5em ); */
 	padding-top: 6em;
 }
 .Home-figure
 {
 	align-items: center;
-	background: hsl( 0, 70%, 70%);
+	/* background: hsl( 0, 70%, 70%); */
 	border-radius: 5px;
 	display: flex;
+	flex-direction: column;
 	margin: 0;
 	padding: 0;
 }
@@ -392,7 +398,7 @@ body
 .Aside-article
 {
 	width: 100%;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 }
 .Aside-article-title
 {
@@ -407,6 +413,7 @@ body
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	margin: 1rem 0 0 0;
 }
 .Social-item:last-child
 {
