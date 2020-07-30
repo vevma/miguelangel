@@ -9,10 +9,11 @@
 	<link rel="stylesheet" href="css/font-awesome.css" />
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/misestilos.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
 
 	<script src="js/script.js"></script>
 </head>
-<body>
+<body id="inicio">
 	<div id="agrupar">
 		<header class="Header">
 			<a class="Header-link" href="index.html">
@@ -46,53 +47,56 @@
 			</figure>
 		</header>
 		<section id="seccion">
-			<main class="Home" id="inicio">
-				<h2 class="Home-title">Conceptos</h2>
-				<ul class="Art-concepts">
-					<li class="Art-item">
-						<h3>Arte:</h3>
-						<p>
-							Es el concepto que engloba todas las creaciones realizadas por el ser
-							humano para expresar una visión sensible acerca del mundo, ya sea real
-							o imaginario. Mediante recursos plásticos, lingüísticos o sonoros,
-							el arte permite expresar ideas, emociones, percepciones y sensaciones.
-						</p>
-					</li>
-					<li class="Art-item">
-						<h3>Diseño:</h3>
-						<p>
-							se refiere a un boceto, bosquejo o esquema que se realiza, ya sea
-							mentalmente o en un soporte material, antes de concretar la producción
-							de algo. El término también se emplea para referirse a la apariencia
-							de ciertos productos en cuanto a sus líneas, forma y funcionalidades.
-						</p>
-					</li>
-					<li class="Art-item">
-						<h3>Bocetos, Ilustración:</h3>
-						<p>
-							Se refiere al esquema o el proyecto que sirve de bosquejo para
-							cualquier obra. Se trata de una guía que permite volcar y exhibir
-							sobre un papel una idea  general antes de arribar al trabajo que
-							arrojará un resultado final.
-						</p>
-					</li>
-					<li class="Art-item">
-						<h3>Colores:</h3>
-						<p>
-							Es una sensación que producen los rayos luminosos en los órganos
-							visuales y que es interpretada en el cerebro. Se trata de un fenómeno
-							físico-químico donde cada color depende de la longitud de onda.
-						</p>
-					</li>
-					<li class="Art-item">
-						<h3>Fotografía:</h3>
-						<p>
-							Es el procedimiento y arte que permite fijar y reproducir, a través
-							de reacciones químicas y en superficies preparadas para ello, las
-							imágenes que se recogen en el fondo de una cámara oscura.
-						</p>
-					</li>
-				</ul>
+			<main class="Home">
+				<section class="Content">
+					<h2 class="Content-title">Conceptos</h2>
+
+					<ul class="Art-concepts">
+						<li class="Art-item">
+							<h3>Arte:</h3>
+							<p>
+								Es el concepto que engloba todas las creaciones realizadas por el ser
+								humano para expresar una visión sensible acerca del mundo, ya sea real
+								o imaginario. Mediante recursos plásticos, lingüísticos o sonoros,
+								el arte permite expresar ideas, emociones, percepciones y sensaciones.
+							</p>
+						</li>
+						<li class="Art-item">
+							<h3>Diseño:</h3>
+							<p>
+								se refiere a un boceto, bosquejo o esquema que se realiza, ya sea
+								mentalmente o en un soporte material, antes de concretar la producción
+								de algo. El término también se emplea para referirse a la apariencia
+								de ciertos productos en cuanto a sus líneas, forma y funcionalidades.
+							</p>
+						</li>
+						<li class="Art-item">
+							<h3>Bocetos, Ilustración:</h3>
+							<p>
+								Se refiere al esquema o el proyecto que sirve de bosquejo para
+								cualquier obra. Se trata de una guía que permite volcar y exhibir
+								sobre un papel una idea  general antes de arribar al trabajo que
+								arrojará un resultado final.
+							</p>
+						</li>
+						<li class="Art-item">
+							<h3>Colores:</h3>
+							<p>
+								Es una sensación que producen los rayos luminosos en los órganos
+								visuales y que es interpretada en el cerebro. Se trata de un fenómeno
+								físico-químico donde cada color depende de la longitud de onda.
+							</p>
+						</li>
+						<li class="Art-item">
+							<h3>Fotografía:</h3>
+							<p>
+								Es el procedimiento y arte que permite fijar y reproducir, a través
+								de reacciones químicas y en superficies preparadas para ello, las
+								imágenes que se recogen en el fondo de una cámara oscura.
+							</p>
+						</li>
+					</ul>
+				</section>
 				<!-- <div class="Home-extra">
 					<div class="Home-extra-main">
 						<article class="Home-article">
@@ -115,19 +119,20 @@
 						</article>
 					</div>
 				</div> -->
-				<section id="fotos" class="Photo">
-					<h2 class="Home-title">Fotos</h2>
+				<div id="fotos"></div>
+				<section class="Photo">
+					<h2 class="Photo-title">Fotos</h2>
 	
-					<figure class="Photo">
+					<figure class="Photo-figure">
 						<img class="Photo-img" src="img/frio.jpg" alt="" />
 						<figcaption class="Photo-desciption">
 							Representación del sentemiento de frio en Puno.
 						</figcaption>
 					</figure>
-					<figure class="Photo">
+					<figure class="Photo-figure">
 						<img class="Photo-img" src="img/orrilla.jpg" alt="" />
 						<figcaption class="Photo-desciption">
-							Las orillas del lago Titicaca.
+							Las orillas del lago Titicaca
 						</figcaption>
 					</figure>
 				</section>
@@ -155,7 +160,7 @@
 				<span class="Clock-time"></span>
 			</div> -->
 			<article class="Aside-article">
-				<h3 class="Aside-article-title">Contactos:</h3>
+				<h3 class="Aside-title">Contactos:</h3>
 				<ul class="Social">
 					<li class="Social-item">
 						<a
