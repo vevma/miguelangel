@@ -49,7 +49,7 @@ body
 #agrupar
 {
 	/* background: hsl( 205, 65%, 20% ); */
-	background:  hsl( 0, 0%, 99%);
+	background:  hsl(203, 50%, 97%);
 	display: flex;
 	color: hsl( 100, 0%, 0%);
 	font-family: "Roboto", sans-serif;
@@ -57,6 +57,8 @@ body
 	text-align: left;
 	width: 100%;
 	font-size: 16px;
+	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased
 }
 
 .Header
@@ -158,18 +160,18 @@ body
 #seccion
 {
 	/* background: hsl( 0, 0%, 95% ); */
-	border-right: 1px solid hsl( 0, 0%, 0%);
+	border-right: 1px solid hsl(0, 0%, 70%);
 	box-sizing: border-box;
 	/*float: left;*/
 	padding: 0 1em;
 	position: relative;
-	width: 70%;
+	width: 68%;
 }
 
 /* START "Home" styles --------------------------- */
 .Home
 {
-	margin: 1rem 1rem 0 1rem;
+	margin: 1rem 1rem 0 1.5rem;
 	padding-top: 6em;
 }
 .Home-figure
@@ -186,7 +188,7 @@ body
 .Home-img
 {
 	border-radius: 5px;
-	border: 5px solid transparent;
+	/* border: 5px solid transparent; */
 	height: 10em;
 	width: 11em;
 }
@@ -195,6 +197,13 @@ body
 }
 .Home-desc {
 	font-weight: 300;
+	background: hsl(0, 0%, 100%);
+	padding: .5rem;
+	border-radius: 4px;
+	line-height: 1.1em;
+	border: 1px solid hsla(0, 0%, 0%, .1);
+	margin: .5rem 0 0 0;
+	font-size: 1.05rem;
 }
 /* Start content ------------------------------------- */
 .Content-title {
@@ -202,6 +211,7 @@ body
 }
 .Content h3 {
 	font-weight: 500;
+	margin: 0 0 .4rem;
 }
 .Content p {
 	font-weight: 300;
@@ -213,10 +223,28 @@ body
 	margin: 0 0 1rem 0;
 }
 .Art-item {
-	border: 1px dashed black;
+	/* border: 1px dashed black; */
 	border-radius: 4px;
 	margin: 0 0 1rem 0;
-	padding: .5rem;
+	padding: .5rem 1rem;
+	background-color: hsl(0, 0%, 100%);
+	box-shadow: 0 2px 14px 0 hsla(0, 0%, 0%, .1);
+}
+
+.Art-item:nth-child(1) {
+	border-left: 4px solid hsl(0, 78%, 51%);
+}
+.Art-item:nth-child(2) {
+	border-left: 4px solid hsl(203, 94%, 46%);
+}
+.Art-item:nth-child(3) {
+	border-left: 4px solid hsl(140, 100%, 34%);
+}
+.Art-item:nth-child(4) {
+	border-left: 4px solid hsl(29, 100%, 49%);
+}
+.Art-item:nth-child(5) {
+	border-left: 4px solid hsl(195, 81%, 54%);
 }
 
 
@@ -249,6 +277,9 @@ body
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
+	background: hsla(0, 0%, 100%, .8);
+	padding: .3rem .5rem;
+	border-radius: 4px;
 }
 
 /* End Photo ----------------------------------------- */
@@ -287,7 +318,7 @@ body
 	position: fixed;
 	top: 5em;
 	right: 0;
-	width: 30%;
+	width: 32%;
 	box-sizing: border-box;
 	height: calc( 100vh - 5em );
 }
